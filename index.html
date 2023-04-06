@@ -751,13 +751,13 @@
         <script>
             function sendEmail(){
                 Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "username",
-                    Password : "password",
-                    To : 'them@website.com',
-                    From : "you@isp.com",
-                    Subject : "This is the subject",
-                    Body : "And this is the body"
+                    Host : "smtp.gmail.com",
+                    Username : "anjargani89@gmail.com",
+                    Password : "090298anjar",
+                    To : 'anjargani89@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact",
+                    Body : "Thanks For Contact"
                 }).then(
                 message => alert(message)
                 );
