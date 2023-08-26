@@ -3951,6 +3951,48 @@ body {
     transition: all .3s;
 }
 
+/* Gaya untuk wadah pop-up */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gaya untuk animasi neon border */
+.popup-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #00ccff, #d500f9);
+    border-image-slice: 1;
+}
+
+/* Animasi untuk neon border */
+.neon-border {
+    animation: neon-border 2s linear infinite;
+}
+
+/* Keyframes untuk animasi neon border */
+@keyframes neon-border {
+    0%, 100% {
+        border-width: 2px;
+    }
+    50% {
+        border-width: 10px;
+    }
+}
+
 .clients .bord .item {
     margin-bottom: 30px;
 }
